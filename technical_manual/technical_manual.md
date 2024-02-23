@@ -348,7 +348,7 @@ In addition to these changes, we simplified the Database Schema structure which 
 - if using Git, clone the repository using `git clone https://gitlab.computing.dcu.ie/choac2/2024-ca326-cchoa-3yp`
 - Navigate to the `code` directory in the cloned repository.
 ### 5.2.4 Environment Setup
-- Set up environment variables with `.env` where the OpenAI key is placed in the format:
+- Set up environment variables with `code/FlaskProto/.env` where the OpenAI key is placed in the format:
 `OPEN_AI_APIKEY = sk_XXX`
 - Run the Makefile with `make` and/or `make run`, this will set up a new virtual environment and install all packages from `requirements.txt`
 - Alternatively this can be done manually using `pip install -r requirements.txt`
