@@ -7,7 +7,7 @@
       },
       {
         "question": "Where was the biggest vaccination rate achieved?",
-        "expected_sql_result": "The result is: ('Ra thfarnham-Templeogue, South Dublin',)"
+        "expected_sql_result": "The result is: ('Rathfarnham-Templeogue, South Dublin',)"
       },
       {
         "question": "What are the different age groups listed in the database?",
