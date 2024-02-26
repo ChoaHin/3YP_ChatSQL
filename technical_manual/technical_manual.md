@@ -396,4 +396,13 @@ The above interaction consists of a User question taken from `test_data.json` an
 
 The correct answer would have been an error and refusal to answer as no local electoral area was supplied, instead on each test run a different answer was given. 
 
-## 7.2 B: Test Plan
+## 7.2 B: Testing
+To make sure our main features are always functional, we use the pytest testing framework for our test suite. Among our tests are: 
+
+- Pre-processing Function Testing: We velidate the pre-processing functions, such as database schema generation and error exception handling, that are needed for our chatbot. We prepare a sample database, by asserting the generated database schema matches our expected result, and testing the ability raise an error for non-existing databases, we are able to achieve our goal of this testing.
+
+- Data Correctness Testing: We created a set of questions and expected response for our chatbot to assess the correctness. By running pytest, we can quickly gather the data we needed to compare it to previous results to make minor adjustments to our chatbot temperature and prompt selection.
+
+- Prompt Testing: We initialize the `ChatbotProcessor` class and generate responses to each of the questions in `test_data.json`, the LLM's output is then execute using the `execute_sql_query` function and asserted against a known valid response to each question.
+
+This structured approach for our test suite ensure that our system's functionality are always valid and helps to identify and address any issues, including LLM hallucinations.
